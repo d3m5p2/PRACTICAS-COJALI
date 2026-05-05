@@ -5,15 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - David Martín Prieto</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
+
     <header>
         <h1>David Martín Prieto</h1>
         <p>Estudiante de Desarrollo de Aplicaciones Multiplataforma (DAM) – 1.º curso</p>
     </header>
 
     <main>
+
         <section>
             <h2>Sobre mí</h2>
             <p>
@@ -43,7 +46,6 @@
 
         <section>
             <h2>Habilidades técnicas</h2>
-
             <ul>
                 <li>Bases de Datos (SQL)</li>
                 <li>Java (programación orientada a objetos)</li>
@@ -86,6 +88,7 @@
 
         <section>
             <h2>Contacto</h2>
+
             <address>
                 <p>
                     <strong>Correo electrónico:</strong>
@@ -96,12 +99,34 @@
                 <p><strong>Teléfono:</strong> +34 693 92 24 33</p>
                 <p><strong>Ubicación:</strong> La Solana, Ciudad Real, 13240</p>
             </address>
+
+            <form action="#" method="post">
+
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+                </div>
+
+                <div>
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+                </div>
+
+                <div>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                </div>
+
+                <div>
+                    <button type="submit">Enviar mensaje</button>
+                </div>
+
+            </form>
         </section>
 
     </main>
 
     <footer>
-        <hr>
         <p>Portfolio creado por David Martín Prieto – 2026</p>
     </footer>
 
