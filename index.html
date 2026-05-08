@@ -9,15 +9,24 @@
 </head>
 
 <body>
-
     <header>
         <h1>David Martín Prieto</h1>
         <p>Estudiante de Desarrollo de Aplicaciones Multiplataforma (DAM) – 1.º curso</p>
     </header>
 
-    <main>
+    <nav>
+        <ul>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#estudios">Estudios</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
 
-        <section>
+    <main>
+        <section id="sobre-mi">
             <h2>Sobre mí</h2>
             <p>
                 Soy estudiante de primer curso del Grado Superior en Desarrollo de Aplicaciones
@@ -28,7 +37,7 @@
             </p>
         </section>
 
-        <section>
+        <section id="estudios">
             <h2>Estudios</h2>
 
             <article>
@@ -44,7 +53,7 @@
             </article>
         </section>
 
-        <section>
+        <section id="habilidades">
             <h2>Habilidades técnicas</h2>
             <ul>
                 <li>Bases de Datos (SQL)</li>
@@ -55,7 +64,7 @@
             </ul>
         </section>
 
-        <section>
+        <section id="idiomas">
             <h2>Idiomas</h2>
             <ul>
                 <li>Español – Nativo</li>
@@ -63,7 +72,7 @@
             </ul>
         </section>
 
-        <section>
+        <section id="experiencia">
             <h2>Experiencia laboral</h2>
 
             <article>
@@ -77,7 +86,7 @@
             </article>
         </section>
 
-        <section>
+        <section id="otros">
             <h2>Otros datos</h2>
             <ul>
                 <li>Carnet de conducir: Tipo B</li>
@@ -86,7 +95,39 @@
             </ul>
         </section>
 
-        <section>
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+
+            <div class="contenedor-proyectos">
+
+                <article class="tarjeta-proyecto">
+                    <img src="img/proyecto1.png" alt="Captura del proyecto Portfolio Web">
+                    <div class="tarjeta-info">
+                        <h3>Portfolio Web</h3>
+                        <p>Página web personal creada con HTML5 y CSS como proyecto de clase de 1.º de DAM.</p>
+                    </div>
+                </article>
+
+                <article class="tarjeta-proyecto">
+                    <img src="img/proyecto2.png" alt="Captura del proyecto Base de Datos">
+                    <div class="tarjeta-info">
+                        <h3>Base de Datos – Biblioteca</h3>
+                        <p>Diseño y creación de una base de datos relacional para gestionar préstamos de libros.</p>
+                    </div>
+                </article>
+
+                <article class="tarjeta-proyecto">
+                    <img src="img/proyecto3.png" alt="Captura del proyecto Java">
+                    <div class="tarjeta-info">
+                        <h3>Aplicación Java – Gestión de tareas</h3>
+                        <p>Pequeña aplicación de consola en Java con programación orientada a objetos.</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="contacto">
             <h2>Contacto</h2>
 
             <address>
@@ -127,7 +168,13 @@
     </main>
 
     <footer>
-        <p>Portfolio creado por David Martín Prieto – 2026</p>
+        <p class="footer-copy">© 2026 David Martín Prieto</p>
+
+        <ul class="footer-redes">
+            <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+            <li><a href="https://linkedin.com/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://instagram.com/" target="_blank">Instagram</a></li>
+        </ul>
     </footer>
 
 </body>
