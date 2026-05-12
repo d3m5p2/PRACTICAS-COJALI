@@ -129,6 +129,23 @@ ul li {
     margin-bottom: 6px;
 }
 
+#lista-estudios {
+    margin-bottom: 20px;
+}
+
+.form-estudio {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 16px;
+    margin-top: 16px;
+}
+
+.form-estudio h3 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+
 .contenedor-proyectos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -291,6 +308,15 @@ body.dark-mode article {
 }
 
 body.dark-mode article h3 {
+    color: #90caf9;
+}
+
+body.dark-mode .form-estudio {
+    background-color: #2a2a2a;
+    border-color: #333;
+}
+
+body.dark-mode .form-estudio h3 {
     color: #90caf9;
 }
 
