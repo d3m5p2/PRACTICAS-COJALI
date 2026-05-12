@@ -22,6 +22,7 @@ header {
     color: #ffffff;
     text-align: center;
     padding: 40px 20px 30px 20px;
+    position: relative;
 }
 
 header h1 {
@@ -33,6 +34,25 @@ header p {
     margin: 0;
     font-size: 1em;
     color: #bdc3c7;
+}
+
+#btn-tema {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+#btn-tema:hover {
+    background-color: #ffffff;
+    color: #2c3e50;
 }
 
 nav {
@@ -110,8 +130,8 @@ ul li {
 }
 
 .contenedor-proyectos {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
@@ -248,4 +268,108 @@ footer {
 
 .footer-redes a:hover {
     color: #ffffff;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode section {
+    background-color: #1e1e1e;
+    border-color: #333;
+}
+
+body.dark-mode section h2 {
+    color: #90caf9;
+    border-bottom-color: #90caf9;
+}
+
+body.dark-mode article {
+    background-color: #2a2a2a;
+    border-left-color: #90caf9;
+}
+
+body.dark-mode article h3 {
+    color: #90caf9;
+}
+
+body.dark-mode .tarjeta-proyecto {
+    background-color: #1e1e1e;
+    border-color: #333;
+}
+
+body.dark-mode .tarjeta-info h3 {
+    color: #90caf9;
+}
+
+body.dark-mode .tarjeta-info p {
+    color: #aaaaaa;
+}
+
+body.dark-mode .tarjeta-proyecto img {
+    background-color: #333;
+}
+
+body.dark-mode form label {
+    color: #e0e0e0;
+}
+
+body.dark-mode form input,
+body.dark-mode form textarea {
+    background-color: #2a2a2a;
+    border-color: #555;
+    color: #e0e0e0;
+}
+
+body.dark-mode form input:focus,
+body.dark-mode form textarea:focus {
+    border-color: #90caf9;
+}
+
+body.dark-mode address a {
+    color: #90caf9;
+}
+
+body.dark-mode #btn-tema {
+    border-color: #90caf9;
+    color: #90caf9;
+}
+
+body.dark-mode #btn-tema:hover {
+    background-color: #90caf9;
+    color: #121212;
+}
+
+@media (max-width: 860px) and (min-width: 601px) {
+    .contenedor-proyectos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5em;
+        margin-top: 36px;
+    }
+
+    #btn-tema {
+        font-size: 0.78em;
+        padding: 5px 10px;
+    }
+
+    nav ul li a {
+        padding: 10px 10px;
+        font-size: 0.85em;
+    }
+
+    .contenedor-proyectos {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }
