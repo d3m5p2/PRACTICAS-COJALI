@@ -44,17 +44,30 @@
         <section id="estudios">
             <h2>Estudios</h2>
 
-            <article>
-                <h3>Grado Superior – Desarrollo de Aplicaciones Multiplataforma (DAM)</h3>
-                <p><strong>Centro:</strong> IES Gregorio Prieto, Valdepeñas (Ciudad Real)</p>
-                <p><strong>Periodo:</strong> septiembre 2025 – actualidad</p>
-            </article>
+            <div id="lista-estudios"></div>
 
-            <article>
-                <h3>Grado Medio – Sistemas Microinformáticos y Redes (SMR)</h3>
-                <p><strong>Centro:</strong> IES Modesto Navarro, La Solana (Ciudad Real)</p>
-                <p><strong>Periodo:</strong> septiembre 2023 – junio 2025</p>
-            </article>
+            <form id="form-estudio" class="form-estudio" action="#" method="post">
+                <h3>Añadir nuevo estudio</h3>
+
+                <div>
+                    <label for="titulo-estudio">Título:</label>
+                    <input type="text" id="titulo-estudio" name="titulo-estudio" placeholder="Ejemplo: Curso de Java" required>
+                </div>
+
+                <div>
+                    <label for="centro-estudio">Centro:</label>
+                    <input type="text" id="centro-estudio" name="centro-estudio" placeholder="Ejemplo: IES Gregorio Prieto" required>
+                </div>
+
+                <div>
+                    <label for="periodo-estudio">Periodo:</label>
+                    <input type="text" id="periodo-estudio" name="periodo-estudio" placeholder="Ejemplo: 2025 - actualidad" required>
+                </div>
+
+                <div>
+                    <button type="submit">Añadir estudio</button>
+                </div>
+            </form>
         </section>
 
         <section id="habilidades">
